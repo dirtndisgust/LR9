@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #97ea79; 
+  font-weight: bold;
+  font-size: 28px;
+  color: beige;
+}
+
+/* загальний контейнер */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;  
+  align-items: center;
+  justify-content: space-around;
+  background: #04a111d8;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(12, 145, 61);
+  box-sizing: border-box;
+}
+
+/* текст */
+.user, .round, .computer {
+  text-align: center;
+}
+
+.score {
+  font-weight: normal;
+  margin: 10px auto;
+}
+
+.round {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+img[alt]{
+  font-size: 16px;
+}
+
+/* кнопка */
+#startPlay{
+  padding: 15px 35px;
+  background: #295b10bb;
+  color: beige;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* адаптивність */
+@media (max-width: 900px) {
+  .container{
+    margin: 20px 10px;
+    font-size: 24px;
+  }
+  #startPlay{
+    padding: 10px 10px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;  
+    flex-direction: column;
+  }
+   #startPlay{
+    margin-bottom: 10px;
+  } 
+  .round{
+    margin: 20px auto;
+  }
+}
